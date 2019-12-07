@@ -29,9 +29,6 @@ def generate_path(directions):
     return path[1:] 
 
 
-
-    
-
 first_path = map(lambda x: "%i,%i" % (x[0], x[1]), generate_path(path1))
 second_path = map(lambda x: "%i,%i" % (x[0], x[1]), generate_path(path2))
 intersects = list(set(first_path).intersection(second_path))
